@@ -19,8 +19,8 @@ on:
       - master
     paths:
       - 'newifi3.config'
-  schedule:
-    - cron: 0 8 * * 5
+  #schedule:
+    #- cron: 0 8 * * 5
   watch:
     types: started
 
@@ -35,7 +35,7 @@ env:
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
-  UPLOAD_WETRANSFER: true
+  UPLOAD_WETRANSFER: false
   TZ: Asia/Shanghai
 
 jobs:
